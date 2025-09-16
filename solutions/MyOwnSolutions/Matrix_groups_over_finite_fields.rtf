@@ -1,0 +1,58 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2865
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red193\green193\blue193;\red89\green138\blue67;\red202\green202\blue202;
+\red167\green197\blue152;\red212\green214\blue154;\red183\green111\blue179;\red194\green126\blue101;\red205\green173\blue106;
+}
+{\*\expandedcolortbl;;\cssrgb\c80000\c80000\c80000;\cssrgb\c41569\c60000\c33333;\cssrgb\c83137\c83137\c83137;
+\cssrgb\c70980\c80784\c65882;\cssrgb\c86275\c86275\c66667;\cssrgb\c77255\c52549\c75294;\cssrgb\c80784\c56863\c47059;\cssrgb\c84314\c72941\c49020;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19680\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \strokec3 ## Exercise "Matrix groups over finite fields\strokec2 \
+\
+d \strokec4 =\strokec2  \strokec5 5\strokec2 \
+q \strokec4 =\strokec2  \strokec5 3\strokec2 \
+x \strokec4 =\strokec2  \strokec6 rand_pseudo\strokec2 (\strokec6 SL\strokec2 (d, q))\
+m \strokec4 =\strokec2  \strokec6 matrix\strokec2 (x)\
+poly \strokec4 =\strokec2  \strokec6 minpoly\strokec2 (m)\
+id \strokec4 =\strokec2  \strokec6 identity_matrix\strokec2 (\strokec6 GF\strokec2 (q), d) \
+\
+V \strokec4 =\strokec2  \strokec6 vector_space\strokec2 (\strokec6 GF\strokec2 (q), d)\
+\
+f \strokec4 =\strokec2  \strokec6 collect\strokec2 (\strokec6 factor\strokec2 (poly))\
+\
+set \strokec4 =\strokec2  \strokec6 Set\strokec2 ()\
+\pard\pardeftab720\partightenfactor0
+\cf0 \strokec7 for\strokec2  i \strokec4 in\strokec2  \strokec5 1\strokec4 :\strokec6 length\strokec2 (f)\
+    \strokec6 push!\strokec2 (set, f[i][\strokec5 1\strokec2 ])\
+\strokec7 end\strokec2 \
+\
+\
+\strokec7 for\strokec2  s \strokec4 in\strokec2  set\
+    m \strokec4 =\strokec2  \strokec6 s\strokec2 (m)\
+    \strokec6 print\strokec2 (\strokec8 "The matrix \strokec9 \\n\\n\strokec8 "\strokec2 )\
+    \strokec6 display\strokec2 (m)\
+\
+    \strokec6 print\strokec2 (\strokec8 "has eigenvalues: "\strokec2 )\
+    \strokec7 for\strokec2  i \strokec4 in\strokec2  \strokec6 eigenvalues\strokec2 (\strokec6 matrix\strokec2 (m))\
+\
+        s \strokec4 =\strokec2  \strokec6 Set\strokec2 ()\
+        \strokec7 for\strokec2  j \strokec4 in\strokec2  \strokec5 1\strokec4 :\strokec6 nrows\strokec2 (\strokec6 eigenspace\strokec2 (m, i, side\strokec4 =\strokec2 :left))\
+            \strokec6 push!\strokec2 (s, \strokec6 V\strokec2 (\strokec6 eigenspace\strokec2 (m, i, side\strokec4 =\strokec2 :left)[j, :]))\
+        \strokec7 end\strokec2 \
+\
+        eig_space_i, _ \strokec4 =\strokec2  \strokec6 sub\strokec2 (V, [x \strokec7 for\strokec2  x \strokec4 in\strokec2  s])\
+\
+        \strokec6 print\strokec2 (\strokec8 "\strokec9 \\n\strokec8 "\strokec2 , i, \strokec8 " and dim(Eigenspace) = "\strokec2 , \strokec6 dim\strokec2 (eig_space_i))\
+        \strokec6 print\strokec2 (\strokec8 "\strokec9 \\n\strokec8 "\strokec2 )\
+    \strokec7 end\strokec2 \
+    \strokec6 print\strokec2 (\strokec8 "---------------------------------------------\strokec9 \\n\strokec8 "\strokec2 )\
+\strokec7 end\strokec2 \
+\
+}
