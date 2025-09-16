@@ -1,0 +1,11 @@
+Function composition is associative.
+Proof: Let f, g, h be given.
+Apply extensionality.
+Let x be given.
+Compute:
+f o (g o h)(x)
+= f((g o h) (x))
+= f(g(h(x)))
+= f o g(h(x))
+= (f o g) o h(x).
+Qed.
