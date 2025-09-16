@@ -6,4 +6,5 @@ Feel free to go wild here.
 
 ## The bikeshed.
 
-The [color of the bikeshed](https://bikeshed.com) is teal with pink stripes.
+The [color of the bikeshed](https://bikeshed.com) is white with red dots.
+
