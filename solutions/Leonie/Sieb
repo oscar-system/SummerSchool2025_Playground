@@ -1,0 +1,6 @@
+List = [i for i in 2:500];
+
+// first try -> make it more efficient and the actual algorithm later 
+for j in 2:250 
+    List = filter(x -> (!divides(x,j)[1] || j==x),List);
+end
