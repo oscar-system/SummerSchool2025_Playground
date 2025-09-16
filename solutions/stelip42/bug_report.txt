@@ -1,0 +1,4 @@
+R, f = residue_ring(ZZ, 12)
+F = free_module(R,1)
+h, k = hom(F,F)
+k(gen(f,1))
