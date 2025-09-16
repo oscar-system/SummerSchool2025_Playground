@@ -1,0 +1,15 @@
+list = 2:500
+primes = trues(500)
+for i = 2:500
+       if primes[i]
+           for j = (i+1):500
+               if primes[j]
+                   if divides(j,i)[1]
+                       primes[j] = false
+                       list = filter(x -> x != j, list)
+                   end
+               end
+           end
+       end
+	end
+list
