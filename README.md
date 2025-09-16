@@ -5,5 +5,5 @@ Feel free to go wild here. Yeah!
 
 
 ## The bikeshed.
-
 The [color of the bikeshed](https://bikeshed.com) is rainbowcolored with golden dots.
+

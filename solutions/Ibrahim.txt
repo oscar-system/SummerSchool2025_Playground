@@ -1,0 +1,9 @@
+for i in 2:500
+           if T[i]
+               k=2
+                   while i*k<=500
+                       T[i*k]=0
+                       k +=1
+                   end
+           end
+       end
